@@ -31,7 +31,7 @@ pipeline {
     stage('Docker_run_stage') {
       steps {
         script {
-          sh 'docker run -d -p 8081:80 320565985336.dkr.ecr.us-east-1.amazonaws.com/hello-world-app:latest'
+          sh 'docker run -d -p 8090:80 320565985336.dkr.ecr.us-east-1.amazonaws.com/hello-world-app:latest'
         }
       }
     }
